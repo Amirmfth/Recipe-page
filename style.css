@@ -1,0 +1,134 @@
+@import url(./font.css);
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Stone-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.container img {
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.recipe-info h1 {
+    font-family: young-serif;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+    color: var(--Stone-900);
+}
+
+.recipe-info p {
+    color: var(--Stone-600);
+    font-family: outfit;
+    font-size: .8rem;
+    padding-right: 10px;
+}
+
+.prep {
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.prep h2 {
+    color: var(--Rose-800);
+    font-size: .9rem;
+    font-family: outfit;
+    font-weight: 800;
+}
+
+.prep-list {
+    padding: 10px 0 0 15px;
+        font-family: outfit;
+}
+
+li {
+    color: var(--Stone-600);
+    font-size: .7rem;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-weight: 600;
+    font-family: outfit;
+}
+
+li span {
+    font-family: outfit-bold;
+    color: var(--Stone-900);
+}
+
+li::marker{
+    color: var(--Rose-800);
+    font-family: outfit-bold;
+}
+
+section > h2 {
+    color: var(--Brown-800);
+    font-family: young-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+}
+
+section > ul , section > ol{
+    padding-left: 13px;
+    margin-bottom: 30px;
+}
+
+
+.nutrition p{
+    color: var(--Stone-600);
+    font-family: outfit;
+    margin-bottom: 15px;
+    font-size: .8rem;
+}
+
+.nutrition table {
+    width: 100%;
+}
+
+.nutrition td {
+    padding: 5px 20px;
+    width: 40%;
+    border-bottom: 1px solid var(--Stone-100);
+    font-size: .8rem;
+}
+
+.nutrition tr td:nth-child(1) {
+    color: var(--Stone-600);
+    font-family: outfit;
+}
+.nutrition tr td:nth-child(2) {
+    color: var(--Brown-800);
+    font-family: outfit-bold;
+}
