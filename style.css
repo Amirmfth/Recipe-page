@@ -25,6 +25,8 @@ body{
     min-height: 100vh;
 }
 
+
+/* container-------------------------------------------------- */
 .container {
     display: flex;
     flex-direction: column;
@@ -40,6 +42,8 @@ body{
     border-radius: 10px;
 }
 
+
+/* recipe-info------------------------------------------------- */
 .recipe-info h1 {
     font-family: young-serif;
     margin: 20px 0 10px 0;
@@ -73,6 +77,8 @@ body{
         font-family: outfit;
 }
 
+
+/* list items-------------------------------------------------------------- */
 li {
     color: var(--Stone-600);
     font-size: .7rem;
@@ -92,6 +98,8 @@ li::marker{
     font-family: outfit-bold;
 }
 
+
+/* sections----------------------------------------------------------------- */
 section > h2 {
     color: var(--Brown-800);
     font-family: young-serif;
@@ -106,6 +114,11 @@ section > ul , section > ol{
 }
 
 
+/* ingredients section------------------------------------------------------- */
+.ingredients {
+    border-bottom: 1px solid var(--Stone-150);
+}
+/* nutrition section-------------------------------------------------------- */
 .nutrition p{
     color: var(--Stone-600);
     font-family: outfit;
@@ -128,7 +141,55 @@ section > ul , section > ol{
     color: var(--Stone-600);
     font-family: outfit;
 }
+
 .nutrition tr td:nth-child(2) {
     color: var(--Brown-800);
     font-family: outfit-bold;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 376px){
+    body{
+        padding: 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container img {
+        border-radius: 0;
+    }
+
+    .recipe-info h1{
+        font-size: 1.9rem;
+    }
+
+    .recipe-info p {
+        font-size: 1rem;
+    }
+
+    .prep h2 {
+        font-size: 1.3rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 0  30px;
+    }
+
+    .ingredients {
+        padding: 0;
+        width: calc(100% - 60px);
+    }
+
 }
